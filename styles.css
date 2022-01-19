@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #3399CC;
+    color : whitesmoke;
+    height: 60px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+nav ul{
+    list-style-type: none;
+}
+footer{
+    padding-top: 5% ;
+    position: relative;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.foot{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+.gamecontainer{
+    /* background-color: #07151D; */
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.container{
+    display: grid;
+    margin: 10px;
+    /* gap : 1vw; */
+    grid-template-rows: repeat(3,11vw);
+    grid-template-columns: repeat(3,11vw);
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box :hover{
+    cursor: grab;
+    color: rgb(209, 174, 255);
+}
+
+.gameinfo{
+    font-family: 'Indie Flower', cursive;;
+
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.img1{
+    /* display: none; */
+    /* width : 0 ; */
+    display: flex;
+    justify-content: center;
+}
+.imgpro{
+    display: flex; 
+    transition: width 1s ease-in-out;
+    width: 0;
+    justify-content: center;
+    height: 10vw;
+}
+.info{
+    font-family: 'Mochiy Pop P One', sans-serif;
+
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+
+#reset{
+    cursor: pointer ;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    margin: 20px;
+    background-color: #E1F0F7;
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        display: grid;
+        margin: 10px;
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+    .boxset{
+        font-size: 15vw
+    }
+}
+
+
