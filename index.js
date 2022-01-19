@@ -12,7 +12,9 @@ const nextTurn = ()=>{
     return turn === "X"?"0" : "X"
 }
 
-// music.play();
+music.play();
+
+music.volume = 0.2;
 
 const checkWin = () =>{
     let cases = document.getElementsByClassName("boxset")
@@ -63,6 +65,7 @@ reset.addEventListener('click',() =>{
     Array.from(boxes).forEach( element =>{
         element.querySelector(".boxset").innerText = '';
         turn = 'X';
+        isgameover = false;
         document.getElementsByClassName("info")[0].innerText = turn + 's turn';
         document.querySelector(".img1").getElementsByClassName("imgpro")[0].style.width = "0px";
     })
